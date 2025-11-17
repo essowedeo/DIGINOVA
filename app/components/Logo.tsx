@@ -6,12 +6,12 @@ export default function Logo() {
  return (
  <Link href="/" className="flex items-center gap-2">
  <Image
- src="/diginova-logo.png"
- alt="Logo Diginova Solutions"
+ src="/logo.png"
+ alt="Logo THENOVA"
  width={40}
  height={40}
  />
- <span className="text-2xl font-bold text-blue-600">Diginova</span>
+ <span className="text-2xl font-bold text-blue-600">THENOVA Solutions</span>
  </Link>
  )
 }

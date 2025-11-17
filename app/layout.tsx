@@ -3,10 +3,10 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'Diginova Solutions',
+  title: 'THENOVA Solutions',
   description: 'Entreprise de solutions numériques et innovation digitale',
   icons: {
-    icon: '/diginova-logo.png',
+    icon: '/logo.png',
   },
 }
 

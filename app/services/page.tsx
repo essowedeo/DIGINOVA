@@ -41,7 +41,7 @@ export default function ServicesPage() {
           Nos Services
         </h1>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-          DigiNova Solutions offre une gamme complète de services technologiques pour répondre
+          THENOVA Solutions offre une gamme complète de services technologiques pour répondre
           à tous vos besoins en développement, formation et transformation digitale.
         </p>
       </div>

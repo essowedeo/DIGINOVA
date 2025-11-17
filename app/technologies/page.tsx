@@ -43,7 +43,7 @@ export default function TechnologiesPage() {
           Technologies Maîtrisées
         </h1>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-          DigiNova Solutions couvre un large éventail de technologies dans tous les domaines
+          THENOVA Solutions couvre un large éventail de technologies dans tous les domaines
           du numérique, assurant des solutions complètes et à la pointe de l'innovation.
         </p>
       </div>

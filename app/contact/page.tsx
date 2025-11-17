@@ -56,7 +56,7 @@ export default function ContactPage() {
       <div className="relative z-10 w-full max-w-xl p-10 bg-white/95 rounded-3xl shadow-xl">
         <div className="flex justify-center mb-6">
           <Link href="/">
-            <Image src="/logo.png" alt="Diginova Solutions" width={60} height={60} />
+            <Image src="/logo.png" alt="THENOVA Solutions" width={60} height={60} />
           </Link>
         </div>
 

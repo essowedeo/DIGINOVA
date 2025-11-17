@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-600 text-lg max-w-xl">
-            Diginova Solutions combine expertise, innovation et design pour vous offrir 
+            THENOVA Solutions combine expertise, innovation et design pour vous offrir
             des solutions web modernes, rapides et professionnelles.
           </p>
 
@@ -37,14 +37,14 @@ export default function Home() {
 
         {/* Image équipe */}
         <div className="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden shadow-lg">
-          <Image
-            src="/team.jpg"       // Mets ici ton image d’équipe dans /public
-            alt="Équipe Diginova Solutions"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+        <Image
+          src="/team.jpg"       // Mets ici ton image d'équipe dans /public
+          alt="Équipe THENOVA Solutions"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
       </div>
 
       {/* À PROPOS */}
@@ -53,7 +53,7 @@ export default function Home() {
           <div>
             <h2 className="text-3xl font-bold text-blue-700 mb-4">Qui sommes-nous ?</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              DigiNova Solutions est une société innovante spécialisée dans le développement et
+              THENOVA Solutions est une société innovante spécialisée dans le développement et
               la formation en technologies numériques. Nous concevons des solutions sur mesure et formons
               des stagiaires talentueux pour bâtir une nouvelle génération de développeurs polyvalents.
             </p>
@@ -64,12 +64,13 @@ export default function Home() {
               En savoir plus
             </a>
           </div>
-          <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
             <Image
-              src="/diginova-logo.png"
-              alt="Logo DigiNova Solutions"
-              fill
-              className="object-cover"
+              src="/logo.png"
+              alt="Logo THENOVA Solutions"
+              width={200}
+              height={200}
+              className="object-contain"
             />
           </div>
         </div>
