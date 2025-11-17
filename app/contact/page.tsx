@@ -56,11 +56,11 @@ export default function ContactPage() {
       <div className="relative z-10 w-full max-w-xl p-10 bg-white/95 rounded-3xl shadow-xl">
         <div className="flex justify-center mb-6">
           <Link href="/">
-            <Image src="/logo.png" alt="THENOVA Solutions" width={60} height={60} />
+            <Image src="/logo.png" alt="THENOVA Solutions" width={80} height={80} />
           </Link>
         </div>
 
-        <h1 className="text-3xl font-bold text-center text-blue-700 mb-4">
+        <h1 className="text-3xl font-bold text-center mb-4" style={{color: 'var(--thenova-dark-blue)'}}>
           Contactez-nous
         </h1>
         <p className="text-center text-gray-600 mb-6">
@@ -76,14 +76,16 @@ export default function ContactPage() {
               <div className="flex justify-center space-x-4 mt-1">
                 <a
                   href="tel:+22879420322"
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
+                  className="font-semibold hover:opacity-80 transition"
+                  style={{color: 'var(--thenova-dark-blue)'}}
                 >
                   📞 Appeler
                 </a>
                 <a
                   href="https://wa.me/22879420322"
                   target="_blank"
-                  className="text-green-600 hover:text-green-800 font-semibold"
+                  className="font-semibold hover:opacity-80 transition"
+                  style={{color: 'var(--thenova-light-blue)'}}
                 >
                   💬 WhatsApp
                 </a>
@@ -94,14 +96,16 @@ export default function ContactPage() {
               <div className="flex justify-center space-x-4 mt-1">
                 <a
                   href="tel:+22897220784"
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
+                  className="font-semibold hover:opacity-80 transition"
+                  style={{color: 'var(--thenova-dark-blue)'}}
                 >
                   📞 Appeler
                 </a>
                 <a
                   href="https://wa.me/22897220784"
                   target="_blank"
-                  className="text-green-600 hover:text-green-800 font-semibold"
+                  className="font-semibold hover:opacity-80 transition"
+                  style={{color: 'var(--thenova-light-blue)'}}
                 >
                   💬 WhatsApp
                 </a>
@@ -117,7 +121,8 @@ export default function ContactPage() {
             name="name"
             placeholder="Votre nom"
             required
-            className="w-full border p-3 rounded-lg focus:ring-2 focus:ring-blue-500"
+            className="w-full border p-3 rounded-lg focus:ring-2"
+            style={{borderColor: 'var(--thenova-light-blue)'}}
           />
           <input
             type="email"
@@ -136,7 +141,8 @@ export default function ContactPage() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-3 text-white rounded-xl font-semibold transition shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{backgroundColor: 'var(--thenova-dark-blue)'}}
           >
             {status === "loading" ? "Envoi en cours..." : "Envoyer"}
           </button>

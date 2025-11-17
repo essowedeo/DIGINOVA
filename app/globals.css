@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* THENOVA Solutions Color Palette */
+  --thenova-dark-blue: #0D3A58;
+  --thenova-light-blue: #32A1D7;
+  --thenova-white: #FFFFFF;
+  --thenova-gray: #6B7280;
+  --thenova-light-gray: #F3F4F6;
 }
 
 @theme inline {

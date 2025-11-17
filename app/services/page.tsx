@@ -37,7 +37,7 @@ export default function ServicesPage() {
 
       {/* HERO SERVICES */}
       <div className="text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+        <h1 className="text-4xl md:text-5xl font-extrabold" style={{color: 'var(--thenova-dark-blue)'}}>
           Nos Services
         </h1>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -50,12 +50,12 @@ export default function ServicesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div key={index} className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <h3 className="font-semibold text-xl text-blue-700 mb-3">{service.title}</h3>
+            <h3 className="font-semibold text-xl mb-3" style={{color: 'var(--thenova-dark-blue)'}}>{service.title}</h3>
             <p className="text-gray-600 mb-4">{service.description}</p>
             <ul className="text-sm text-gray-500 space-y-1">
               {service.details.map((detail, i) => (
                 <li key={i} className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                  <span className="w-2 h-2 rounded-full mr-2" style={{backgroundColor: 'var(--thenova-light-blue)'}}></span>
                   {detail}
                 </li>
               ))}
@@ -65,13 +65,13 @@ export default function ServicesPage() {
       </div>
 
       {/* CTA */}
-      <div className="bg-blue-600 text-white max-w-4xl mx-auto rounded-2xl p-10 text-center shadow-xl">
+      <div className="max-w-4xl mx-auto rounded-2xl p-10 text-center shadow-xl" style={{backgroundColor: 'var(--thenova-dark-blue)', color: 'white'}}>
         <h2 className="text-3xl font-bold">Besoin d'un service spécifique ?</h2>
         <p className="mt-3 text-lg">Contactez-nous pour discuter de votre projet et obtenir un devis personnalisé.</p>
 
         <a
           href="/contact"
-          className="mt-6 inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
+          className="mt-6 inline-block px-8 py-3 rounded-lg font-semibold text-white border-2 border-white hover:bg-white hover:text-gray-800 transition"
         >
           Contactez-nous
         </a>

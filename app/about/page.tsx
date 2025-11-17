@@ -6,7 +6,7 @@ export default function AboutPage() {
 
       {/* HERO ABOUT */}
       <div className="text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+        <h1 className="text-4xl md:text-5xl font-extrabold" style={{color: 'var(--thenova-dark-blue)'}}>
           À propos de THENOVA Solutions
         </h1>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -18,7 +18,7 @@ export default function AboutPage() {
 
       {/* OBJECTIFS */}
       <div className="bg-white p-8 rounded-2xl shadow-lg">
-        <h2 className="text-3xl font-bold text-blue-700 mb-6">Nos Objectifs</h2>
+        <h2 className="text-3xl font-bold mb-6" style={{color: 'var(--thenova-dark-blue)'}}>Nos Objectifs</h2>
         <p className="text-gray-600 text-lg leading-relaxed">
           L'objectif de THENOVA Solutions est d'offrir aux entreprises des solutions technologiques
           complètes et de permettre aux jeunes stagiaires d'acquérir une expérience pratique dans
@@ -29,8 +29,8 @@ export default function AboutPage() {
 
 
       {/* MISSION */}
-      <div className="bg-blue-50 p-8 rounded-2xl">
-        <h2 className="text-3xl font-bold text-blue-700 mb-6">Notre Mission</h2>
+      <div className="p-8 rounded-2xl" style={{backgroundColor: 'var(--thenova-light-gray)'}}>
+        <h2 className="text-3xl font-bold mb-6" style={{color: 'var(--thenova-dark-blue)'}}>Notre Mission</h2>
         <p className="text-gray-600 text-lg leading-relaxed">
           Combiner expertise, innovation et formation pour devenir un acteur clé du numérique en Afrique,
           en développant des solutions technologiques de pointe et en formant la prochaine génération de développeurs.

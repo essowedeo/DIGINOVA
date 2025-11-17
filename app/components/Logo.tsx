@@ -11,7 +11,7 @@ export default function Logo() {
  width={40}
  height={40}
  />
- <span className="text-2xl font-bold text-blue-600">THENOVA Solutions</span>
+ <span className="text-2xl font-bold" style={{color: 'var(--thenova-dark-blue)'}}>THENOVA Solutions</span>
  </Link>
  )
 }
