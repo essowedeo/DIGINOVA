@@ -5,6 +5,9 @@ import Footer from './components/Footer'
 export const metadata = {
   title: 'Diginova Solutions',
   description: 'Entreprise de solutions numériques et innovation digitale',
+  icons: {
+    icon: '/diginova-logo.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

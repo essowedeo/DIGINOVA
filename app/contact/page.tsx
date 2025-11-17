@@ -63,9 +63,52 @@ export default function ContactPage() {
         <h1 className="text-3xl font-bold text-center text-blue-700 mb-4">
           Contactez-nous
         </h1>
-        <p className="text-center text-gray-600 mb-8">
+        <p className="text-center text-gray-600 mb-6">
           Remplissez le formulaire et nous reviendrons vers vous rapidement.
         </p>
+
+        {/* Contact Info */}
+        <div className="text-center mb-8">
+          <p className="text-gray-600 mb-4">Ou contactez-nous directement :</p>
+          <div className="space-y-4">
+            <div>
+              <p className="font-semibold text-gray-700">+228 79 42 03 22</p>
+              <div className="flex justify-center space-x-4 mt-1">
+                <a
+                  href="tel:+22879420322"
+                  className="text-blue-600 hover:text-blue-800 font-semibold"
+                >
+                  📞 Appeler
+                </a>
+                <a
+                  href="https://wa.me/22879420322"
+                  target="_blank"
+                  className="text-green-600 hover:text-green-800 font-semibold"
+                >
+                  💬 WhatsApp
+                </a>
+              </div>
+            </div>
+            <div>
+              <p className="font-semibold text-gray-700">+228 97 22 07 84</p>
+              <div className="flex justify-center space-x-4 mt-1">
+                <a
+                  href="tel:+22897220784"
+                  className="text-blue-600 hover:text-blue-800 font-semibold"
+                >
+                  📞 Appeler
+                </a>
+                <a
+                  href="https://wa.me/22897220784"
+                  target="_blank"
+                  className="text-green-600 hover:text-green-800 font-semibold"
+                >
+                  💬 WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* FORMULAIRE */}
         <form onSubmit={handleSubmit} className="space-y-5">
