@@ -1,7 +1,6 @@
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import WhatsappButton from './components/WhatsappButton'
 
 export const metadata = {
   title: 'Diginova Solutions',
@@ -19,9 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
 
         <Footer />
-
-        {/* Bulle WhatsApp */}
-        <WhatsappButton />
       </body>
     </html>
   )
