@@ -6,28 +6,35 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function ContactPage() {
-  const [status, setStatus] = useState<"idle" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const router = useRouter();
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus("loading");
 
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
 
     try {
-      const res = await fetch("https://formspree.io/f/xkgkbrdp", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
 
       if (res.ok) {
-        // Redirige vers la page d'accueil après l'envoi
-        router.push("/");
+        setStatus("success");
+        // Redirige vers la page d'accueil après un court délai
+        setTimeout(() => router.push("/"), 2000);
       } else {
         setStatus("error");
       }
-    } catch (err) {
+    } catch {
       setStatus("error");
     }
   };
@@ -85,11 +92,18 @@ export default function ContactPage() {
           />
           <button
             type="submit"
-            className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition shadow-lg"
+            disabled={status === "loading"}
+            className="w-full py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Envoyer
+            {status === "loading" ? "Envoi en cours..." : "Envoyer"}
           </button>
         </form>
+
+        {status === "success" && (
+          <p className="mt-4 text-green-600 text-center font-semibold">
+            ✅ Message envoyé avec succès ! Redirection en cours...
+          </p>
+        )}
 
         {status === "error" && (
           <p className="mt-4 text-red-600 text-center font-semibold">

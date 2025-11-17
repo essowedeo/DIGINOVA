@@ -47,28 +47,87 @@ export default function Home() {
         </div>
       </div>
 
+      {/* À PROPOS */}
+      <div className="max-w-7xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-3xl font-bold text-blue-700 mb-4">Qui sommes-nous ?</h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              DigiNova Solutions est une société innovante spécialisée dans le développement et
+              la formation en technologies numériques. Nous concevons des solutions sur mesure et formons
+              des stagiaires talentueux pour bâtir une nouvelle génération de développeurs polyvalents.
+            </p>
+            <a
+              href="/about"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+            >
+              En savoir plus
+            </a>
+          </div>
+          <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/diginova-logo.png"
+              alt="Logo DigiNova Solutions"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* SERVICES */}
-      <div id="services" className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-          <h3 className="font-semibold text-lg text-blue-700">Développement Web</h3>
-          <p className="text-gray-600 mt-2 text-sm">
-            Sites vitrines, e-commerce et applications web performantes.
-          </p>
-        </div>
+      <div id="services" className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center text-blue-700 mb-8">Nos Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-          <h3 className="font-semibold text-lg text-blue-700">Design & Branding</h3>
-          <p className="text-gray-600 mt-2 text-sm">
-            Logos, identité visuelle, UI/UX et maquettes modernes.
-          </p>
-        </div>
+          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+            <h3 className="font-semibold text-lg text-blue-700">Développement d'Applications</h3>
+            <p className="text-gray-600 mt-2 text-sm">
+              Web, mobile, desktop et solutions sur mesure.
+            </p>
+          </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-          <h3 className="font-semibold text-lg text-blue-700">Automatisation</h3>
-          <p className="text-gray-600 mt-2 text-sm">
-            Automatisation de vos processus et intégration d’outils digitaux.
-          </p>
+          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+            <h3 className="font-semibold text-lg text-blue-700">Formation & Encadrement</h3>
+            <p className="text-gray-600 mt-2 text-sm">
+              Programme pratique pour stagiaires dans toutes les technologies.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+            <h3 className="font-semibold text-lg text-blue-700">IA & Cybersécurité</h3>
+            <p className="text-gray-600 mt-2 text-sm">
+              Intelligence artificielle, data science et sécurité des systèmes.
+            </p>
+          </div>
+        </div>
+        <div className="text-center mt-8">
+          <a
+            href="/services"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            Voir tous nos services
+          </a>
+        </div>
+      </div>
+
+      {/* TECHNOLOGIES */}
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center text-blue-700 mb-8">Technologies Maîtrisées</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {["React", "Node.js", "Python", "Flutter", "AWS", "Docker", "TensorFlow", "Kali Linux"].map((tech, index) => (
+            <div key={index} className="bg-blue-100 text-blue-700 p-4 rounded-lg text-center font-semibold">
+              {tech}
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <a
+            href="/technologies"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            Voir toutes les technologies
+          </a>
         </div>
       </div>
 
